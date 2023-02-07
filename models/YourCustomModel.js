@@ -5,9 +5,6 @@ const sequelize = require('../config/connection');
 
 // Original model name was "User"
 class YourCustomModel extends Model {
-  checkPassword(loginPw) {
-    return bcrypt.compareSync(loginPw, this.password);
-  }
 }
 
 YourCustomModel.init(
